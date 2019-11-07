@@ -20,7 +20,7 @@ before_install:
 
 script:
 #    -   docker run -e CI=true aye20dockerhub/react-test npm run test
-    - docker run stephengrider/react-test npm test -- --coverage
+    - docker run aye20dockerhub/react-test npm test -- --coverage
 deploy:
     provider:   script
     script: bash ./deploy.sh
